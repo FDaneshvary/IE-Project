@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pro-2-html-Css-JS_main.css">
+    <link rel="stylesheet" href="Pro-2-html-Css-JS.css">
+    <script src="https://kit.fontawesome.com/07cbb92d89.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Start Nav -->
+    <section class="nav_sec fixed-top">
+            <div class="nav_part middle">
+                <div class="menue">
+                    <nav class="nav">
+                        <a class="nav_item" href="">صفحه اصلی</a>
+                        <a class="nav_item" href="">رزرو بلیط</a>
+                        <a class="nav_item" href="">پشتیبانی</a>
+                        <a class="nav_item" href="">تماس با ما</a>
+                    </nav>
+                </div>
+                <div class="login">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="">ورود / ثبت نام </a>
+                </div>
+            </div>
+    </section>
+    <!-- Start Header -->
+    <header>
+        <section class="header_sec">
+            <!-- Start Ticket Reserve -->
+            <div class="reserv_sec">
+                <div class="travel_type">
+                    <span><a href="">یک طرفه</a></span>
+                    <div class="divide_line"></div>
+                    <span><a href="">رفت و برگشت</a></span>
+                </div>
+                <div class="reserve">
+                    <form class="reserv_form" action="">
+                        <!-- origin and destination -->
+                        <div class="ori_dis_part">
+                            <div class="origin_part">
+                                <label for="ori_cities"> مبدا </label>
+                                <select class="ori_cities">
+                                    <option value="choose">انتخاب کنید</option>
+                                    <option value="tehran">تهران</option>
+                                    <option value="mashhad">مشهد</option>
+                                    <option value="birjand">بیرجند</option>
+                                </select>
+                            </div>
+                            <div class="destination_part">
+                                <label for="des_cities"> مقصد </label>
+                                <select class="des_cities">
+                                    <option value="choose">انتخاب کنید</option>
+                                    <option value="tehran">تهران</option>
+                                    <option value="mashhad">مشهد</option>
+                                    <option value="birjand">بیرجند</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- date went -->
+                        <div class="date_part">
+                            <p>  تاریخ رفت </p>
+                            <!-- days -->
+                            <div class="day">
+                                <select class="days">
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>     
+                            </div> / 
+                            <!-- month -->
+                            <div class="month">
+                                <select class="months">
+                                    <option value="farvardin">فروردین</option>
+                                    <option value="ordibehesht">اردیبهشت</option>
+                                    <option value="khordad"> خرداد</option>
+                                    <option value="tir">تیر</option>
+                                    <option value="mordad">مرداد</option>
+                                    <option value="shahrivar">شهریور</option>
+                                    <option value="mehr">مهر</option>
+                                    <option value="aban">آبان</option>
+                                    <option value="azar">آذر</option>
+                                    <option value="dey">دی</option>
+                                    <option value="bahman">بهمن</option>
+                                    <option value="esfand">اسفند</option>
+                                </select>     
+                            </div> /
+                            <!-- year -->
+                            <div class="year">
+                                <select class="years">
+                                    <option value="1401">1401</option>
+                                    <option value="1402">1402</option>
+                                </select>     
+                            </div>
+                        </div>
+                        <br>
+                        <!-- date back -->
+                        <div class="date_part">
+                            <p> تاریخ برگشت  </p>
+                            <!-- days -->
+                            <div class="day">
+                                <select class="days">
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>     
+                            </div> / 
+                            <!-- month -->
+                            <div class="month">
+                                <select class="months">
+                                    <option value="farvardin">فروردین</option>
+                                    <option value="ordibehesht">اردیبهشت</option>
+                                    <option value="khordad"> خرداد</option>
+                                    <option value="tir">تیر</option>
+                                    <option value="mordad">مرداد</option>
+                                    <option value="shahrivar">شهریور</option>
+                                    <option value="mehr">مهر</option>
+                                    <option value="aban">آبان</option>
+                                    <option value="azar">آذر</option>
+                                    <option value="dey">دی</option>
+                                    <option value="bahman">بهمن</option>
+                                    <option value="esfand">اسفند</option>
+                                </select>     
+                            </div> /
+                            <!-- year -->
+                            <div class="year">
+                                <select class="years">
+                                    <option value="1401">1401</option>
+                                    <option value="1402">1402</option>
+                                </select>     
+                            </div>
+                        </div>
+                        <button class="search_btn" type="button"><a href="">جستجو</a></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Suggestion Ticket -->
+    <div class="suggestion">
+        <div class="recommended_cards">
+            <!-- 1 -->
+            <div class="recommended_card">
+                <div class="recommended_card_pic">
+                    <img src="img/mashhad.jpg" alt="">
+                </div>
+
+                <div class="recommended_card_text">
+                    <h3> تهران - مشهد </h3>
+                    <h5> تومان 857,000 </h5>
+                    <button><a href="#">هم اکنون رزرو کنید</a></button>
+                </div>
+
+            </div>
+            <!-- 2 -->
+            <div class="recommended_card">
+                <div class="recommended_card_pic">
+                    <img src="img/birjand.jpg" alt="">
+                </div>
+
+                <div class="recommended_card_text">
+                    <h3> مشهد - بیرجند</h3>
+                    <h5> 694,000 تومان </h5>
+                    <button><a href="#"> هم اکنون رزرو کنید</a></button>
+                </div>
+
+            </div>
+            <!-- 3 -->
+            <div class="recommended_card">
+                <div class="recommended_card_pic">
+                    <img src="img/tehran.jpg" alt="">
+                </div>
+
+                <div class="recommended_card_text">
+                    <h3> تهران - بیرجند </h3>
+                    <h5> 1,398,300 تومان </h5>
+                    <button><a href="#"> هم اکنون رزرو کنید</a></button>             
+                </div>
+
+            </div>
+            <!-- 4 -->
+            <div class="recommended_card">
+                <div class="recommended_card_pic">
+                    <img src="img/esfahan.jpg" alt="">
+                </div>
+
+                <div class="recommended_card_text">        
+                    <h3> مشهد - اصفهان </h3>
+                    <h5> 1,419,360 تومان  </h5>
+                    <button><a href="#"> هم اکنون رزرو کنید</a></button>        
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Social Box -->
+    <div class="social_box">
+        <div class="">
+                <div class="social_item">
+                    <h3 class="py-3" style="font-size:24px;">همه جا در دسترس شما هستیم</h3>
+                    <div class="social_icons_part">
+                        <div class="social_icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="social_icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="social_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="social_icon">
+                            <i class="fa-brands fa-skype"></i>
+                        </div>
+                        <div class="social_icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer_box">
+            <div class="newsletter">
+                <h4 class="">عضویت در خبرنامه</h4>
+                <p style="color: white;">با اشتراک در خبرنامه از آخرین و بهترین پیشنهادها مطلع شوید</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                    <button type="submit" class="">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="e_namad">
+                <img src="img/E_namad.jpg" alt="">
+            </div>
+
+            <div class="link_item">
+                <ul class="icons-list">
+                    <li>
+                        <a href="#">درباره ما</a>
+                        <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+                    </li>
+                    <li>
+                        <a href="#">پرسش های متداول</a>
+                        <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+                    </li>
+                    <li>
+                        <a href="#">مدیریت رزروها</a>
+                        <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+                    </li>
+                    <li>
+                        <a href="#">هواپیمایی ها</a>
+                        <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+                    </li>
+                    <li>
+                        <a href="#">فرودگاه ها</a>
+                        <span class="orang-color fw-bold" style="font-size:18px;"> < </span>   
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gotoup position-relative">
+            <div class="gotoup_sign">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-up gotoup_icon"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script></script>
+</body>
+</html>

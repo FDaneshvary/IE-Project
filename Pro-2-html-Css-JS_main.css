@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body{
+    background-color: rgb(164, 245, 245);
+} */
+
+.middle{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text_color{
+    color: red;
+}

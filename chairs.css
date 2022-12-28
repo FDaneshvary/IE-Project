@@ -1,0 +1,76 @@
+.ch_background{
+    /* background: linear-gradient(rgba(170, 194, 242, 0.5), rgba(170, 191, 234, 0.5)),url("img/ch-background.jpg"); */
+    background-image: url("img/plane.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chairs{
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    /* background-color: blueviolet; */
+    top: 335px;
+    left: 170px;
+}
+
+.row{
+    display: flex;
+    /* width: 20px; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    margin: 0 2px;
+}
+
+.up_ch{
+    margin: 0 0 10px 20px;
+}
+
+.down_ch{
+    margin: 0 0 0 20px;
+}
+
+.chair{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: chartreuse; */
+}
+
+.ch_size{
+    width: 12px;
+    height: 12px;
+    background: #0b5fb3;
+    margin: 2px;
+}
+
+.resev_ch{
+    position: absolute;
+    left: 900px;
+    top: 200px;
+    display: flex;
+    justify-content: right;
+}
+
+.noreserv_ch{
+    position: absolute;
+    left: 900px;
+    top: 220px;
+    display: flex;
+    justify-content: right;
+}
+
+.res{
+    width: 12px;
+    height: 12px;
+    background: #dba100;
+    margin: 2px;
+}
