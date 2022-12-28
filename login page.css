@@ -1,0 +1,106 @@
+
+body{
+    background: linear-gradient(rgba(15,132,250,1),rgba(255,255,255,0.5));
+}
+.main-box{
+    border: solid rgb(15, 132, 250) thin;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 800px;
+    height: 620px;
+    margin-top: 20px;
+    margin-bottom: 20px;     
+}
+.back{
+    /* border: solid; */
+    background-color: white;
+    width: 795px;
+    height: 60px;
+    text-align: right;
+}
+.back span{
+    color:#ffda73;
+    font-style: bold;
+    font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;
+}
+.empty-box{
+    width: 795px;
+    height:30px;
+}
+.account div{
+    font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.inner-box h3{
+    text-align: right;
+    font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;
+}
+.inner-box{
+    /* border: solid; */
+    background-color:white;
+    width: 795px;
+    height: 550px;
+    font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;
+}
+.register{
+    color:#ffda73;
+    border-radius: 10px;
+    background-color: white;  
+    border: 2px solid #ffda73;
+    padding: 25px;
+    width: 100px;
+    height: 45px;
+    font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.register:hover{
+    box-shadow: 0 12px 16px 0 #ffda73, 0 17px 50px 0 white;  
+}
+.line{
+    border-bottom: 1px solid gray;
+    display: block;
+}
+#email{
+      width: 794px;
+      height: 45px;
+      border-radius: 10px;
+      text-align: right;
+      font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;
+}
+#passwd{
+      width: 794px;
+      height: 45px;  
+      text-align: right; 
+      border-radius: 10px;
+      font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;  
+}
+.enter{
+    width: 794px;
+    height: 45px;
+    background-color:  #ffda73; 
+    color: black; 
+    border: 2px solid #ffda73;
+    border-radius: 10px;
+    font-family: Vazir-Regular-FD, Tahoma, Geneva, sans-serif;
+    opacity: 1
+}
+.enter:hover{
+    opacity: 0.6;  
+}
+.mobile{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+.passwd{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+
+}
