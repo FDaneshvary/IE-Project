@@ -7,10 +7,8 @@ for ( var i = 0 ; i < chair.length ; i++){
 function reserve(){
     var reserved = this.classList.contains('res');
     if(reserved){
-        window.alert("is reserved! you can not reserve this chair.");
+        window.alert("این صندلی رزرو شده است");
     }
 
-    //prompt("Are you sure to reserve " + this.name + " seat?");
-    //prompt("Are you sure to reserve this seat?");
     this.classList.add('res');
 }
