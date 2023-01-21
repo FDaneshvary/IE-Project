@@ -1,7 +1,6 @@
-.header-sec{
+/* .header-sec{
   height: 60px;
   background-color:#0b5fb3;
-  border-color:#0b5fb3;
 }
 .header-part{
   width: auto;
@@ -16,20 +15,8 @@
   display: flex;
   align-items: center;
   direction: rtl;
-}
-.l-h-nav{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-.h-nav{
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 5px;
-  color: white;
-  font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
-}
-.backgrand-div{
+} */
+/* .backgrand-div{
   width: auto;
   height: 530px;
   background-color:#0b5fb3;
@@ -38,13 +25,12 @@
   display:flex;
   align-items:center;
   position: relative;
-}
+} */
 .ht{
   background-color: white;
   position: absolute;
-  left:25%;
-  top:5%;
-  width:50%;
+  top:50%;
+  width:100%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -61,9 +47,10 @@
     border-collapse: collapse;
     background-color: white;
     position: absolute;
-    left:25%;
-    top:15%;
-    width: 50%;
+    top:100%;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
 }
 .tr{
   border-bottom: 1px solid #dddddd;
@@ -84,3 +71,90 @@ tr:nth-child(even) {
   text-align: center;
   padding: 8px;
 }
+/* passenger dashbord */
+/* .footer_box{
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#0b5fb3;
+  border-top: 5px solid #dba100;
+}
+
+.newsletter{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.newsletter h4{
+  padding-bottom: 2px;
+  font-size:16px;
+  text-align: right;
+  padding: 5px 0;
+}
+
+.input-group{
+  margin: 3px 0;
+}
+
+.input-group button{
+  background-color: #dba100;
+  color: #0b5fb3;
+  border: 3px solid #0b5fb3;
+  border-radius: 10px;
+  padding: 6px 0;
+}
+
+.input-group input{
+  border-radius: 10px;
+  width: 300px;
+  color: #0b5fb3;
+  border: 2px solid #dba100;
+  padding: 5px 0;
+}
+
+.input-group input:focus{
+  border-color: #dba100;
+}
+
+.e_namad img{
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+
+.link_item{
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.link_item ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+justify-content: baseline;
+align-items: flex-end;
+}
+
+.link_item li{
+  padding: 5px 0;
+}
+
+.icons-list{
+  padding-left: 0px;
+}
+
+.icons-list a{
+  color: #ffff;
+  text-decoration: none;
+}
+
+.icons-list a:hover{
+  color: #dba100;
+} */
+
+
