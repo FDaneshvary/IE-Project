@@ -9,8 +9,7 @@ for ( var i = 0 ; i < chair.length ; i++){
     chair[i].addEventListener('click', reserve)
 }
 
-function reserve(event){
-    event.preventDefault();
+function reserve(){
     var reserved = this.classList.contains('res');
     if(reserved){
         window.alert("این صندلی رزرو شده است");
