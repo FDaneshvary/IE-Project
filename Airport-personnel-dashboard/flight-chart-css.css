@@ -1,0 +1,190 @@
+
+.header-part{
+  width: auto;
+  height: 50px;
+  padding: 20px;
+  background-color: #0b5fb3;;
+  display: flex;
+  align-items: center#0b5fb3;
+  justify-content: right;
+}
+.nav-part{
+  display: flex;
+  align-items: center;
+  direction: rtl;
+}
+.h-nav{
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  color: white;
+  font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+}
+.backgrand-div{
+  width: auto;
+  /* height: 530px; */
+  background: linear-gradient(rgba(15,132,250,1),rgba(255,255,255,0.5));
+  border-radius: 10px;
+  margin-top: 30px;
+  display:flex;
+  align-items:center;
+  position: relative;
+}
+
+.middle-div{
+  width: auto;
+  height: 1200px;
+  background: linear-gradient(rgba(15,132,250,1),rgba(255,255,255,0.5));
+  margin-top: 2px;
+  display:flex;
+  /* align-items:center; */
+  position: relative;
+  
+}
+.right-middle-sec{
+  display:flex;
+  justify-content:right;
+  position: absolute;
+  right: 50px;
+  top:180px;
+}
+.right-middle-part{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 200px;
+height: 250px;
+background-color: white;
+direction: rtl;
+border-radius: 10px;
+font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+}
+.right-middle-p{
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+.right-middle-nav{
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+.right-middle-nav:hover{
+  background-color: #fb0;
+  color: white;
+  border-radius: 10px;
+}
+.left-middle-sec{
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-content: center;
+  align-items:center; 
+  position: absolute;
+  right: 300px;
+  top:50px;
+}
+.top-left-middle-div{
+  background-color: white;
+  width: 1000px;
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.left-middle-p{
+  direction: rtl;
+  padding: 5px;
+  font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+}
+.left-middle-dl{
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+}
+.left-middle-dd{
+  display: block;
+  background-color: #ffebb2;
+  border-radius: 6px;
+  padding: 8px 16px;
+  width: 150px;
+  margin: 5px;
+  text-decoration: none;
+  direction: rtl;
+  font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+  
+}
+.left-middle-dt{
+  padding-top: 10px;
+  padding-right: 5px;
+  direction: rtl;
+  font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+}
+.down-left-middle-div{
+  background-color: white;
+  width: 1000px;
+  height: 165px;
+  border-radius: 10px;
+}
+.ht{
+  background-color: white;
+  position: absolute;
+  left:20%;
+  top:5%;
+  width:50%;
+  display:flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.p-ht{
+  font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+}
+.r-m-p{
+  display: block;
+  color: #000;
+}
+.table{
+    border-collapse: collapse;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top:305px;
+    width: 100%;
+    border-radius: 10px;
+}
+.tr{
+  border-bottom: 1px solid #dddddd;
+  border-radius: 10px;
+  font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+}
+.tr:nth-child(even) {
+  background-color: #ffebb2;
+}
+.tr:hover{
+  background-color: #fb0;
+  color: white;
+  border-radius: 10px;
+}
+
+.table-h{
+  text-align: center;
+  padding: 8px;
+}
+.table-r{ 
+  text-align: center;
+  padding: 8px;
+}
+.tickets-table{
+  border-collapse: collapse;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top:720px;
+  width:100%;
+  border-radius: 10px;
+}
+.airplane-name{
+  color: #000;
+  text-decoration: none;
+}

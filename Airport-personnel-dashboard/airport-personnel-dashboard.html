@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="flight-chart-css.css" rel="stylesheet" />
+    <!-- <link href="pro1_css.css" rel="stylesheet" /> -->
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    
+</head>
+<style>
+  body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+}
+  @font-face {
+    font-family: 'BYekanWeb';
+    src: url('http://example.com/fonts/BYekanWeb.eot');
+    src: local('BYekanWeb'), 
+         url('http://example.com/fonts/BYekanWeb.eot?#iefix') format('embedded-opentype'),
+         url('http://example.com/fonts/BYekanWeb.woff2') format('woff2'),
+         url('http://example.com/fonts/BYekanWeb.woff') format('woff'),
+         url('http://example.com/fonts/BYekanWeb.ttf') format('truetype'),
+         url('http://example.com/fonts/BYekanWeb.svg#BYekanWeb') format('svg');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+</style>
+<body>
+    <div class="header-part">
+       <nav class="nav-part">
+           <a class="h-nav" href="">صفحه اصلی</a>
+           <a class="h-nav" href="">رزرو بلیط</a>
+       </nav>
+    </div>
+    <div class="middle-div"> 
+      <div class="right-middle-sec">
+          <!-- parts of my dashboard -->  
+        <ul class="right-middle-part">
+          <li><p class="right-middle-p"><i class="glyphicon glyphicon-user"></i> مهسا دهقان </p></li>
+         <li><a class="right-middle-nav" href=""><i class="glyphicon glyphicon-tasks"></i> اطلاعات شخصی </a></li>
+         <li><a class="right-middle-nav" href=""><i class="glyphicon glyphicon-tasks"></i> سفرهای من </a></li>
+         <li><a class="right-middle-nav" href=""><i class="glyphicon glyphicon-tasks"></i> اطلاعات پرواز </a></li>
+         <li><a class="right-middle-nav" href=""><i class="glyphicon glyphicon-tasks"></i> لیست بلیط ها </a></li>
+        </ul>
+      </div>
+      <div class="left-middle-sec">
+           <!-- part1-my information -->  
+          <div class="top-left-middle-div">
+              <p class="left-middle-p"> اطلاعات شخصی </p>
+              <dl class="left-middle-dl">
+                  <dt class="left-middle-dt">نام</dt>
+                  <dd class="left-middle-dd">مهسا</dd>
+                  <dt class="left-middle-dt">نام خانوادگی</dt>
+                  <dd class="left-middle-dd">دهقان</dd>
+                  <dt class="left-middle-dt">کد ملی</dt>
+                  <dd class="left-middle-dd">0925617091</dd>
+                  <dt class="left-middle-dt">تلفن همراه</dt>
+                  <dd class="left-middle-dd">09011025062</dd>
+              </dl>
+           </div>
+              <!-- part2-my travel part -->  
+           <div class="down-left-middle-div">
+              <p class="left-middle-p"> سفر های من </p>
+              <dl class="left-middle-dl">
+                  <dt class="left-middle-dt">مبدا</dt>
+                  <dd class="left-middle-dd">بیرجند</dd>
+                  <dt class="left-middle-dt">مقصد</dt>
+                  <dd class="left-middle-dd">تهران</dd>
+                  <dt class="left-middle-dt">زمان</dt>
+                  <dd class="left-middle-dd">22:00</dd>
+                  <dt class="left-middle-dt">تاریخ</dt>
+                  <dd class="left-middle-dd">1401/09/23</dd>
+              </dl>
+              <dl class="left-middle-dl">
+                  <dt class="left-middle-dt">هواپیمایی</dt>
+                  <dd class="left-middle-dd">سپهران</dd>
+                  <dt class="left-middle-dt">هواپیما</dt>
+                  <dd class="left-middle-dd">boeing 737</dd>
+                  <dt class="left-middle-dt">شماره پرواز</dt>
+                  <dd class="left-middle-dd">1234</dd>
+                  <dt class="left-middle-dt">شماره رزرو</dt>
+                  <dd class="left-middle-dd">12345</dd>
+              </dl>
+           </div>
+             <!-- part3-flight chart -->                                                                                                                                                                                                                                                     
+         <table class="table">
+             <tr class="tr">
+                 <th class="table-h">وضعیت</th>
+                 <th class="table-h">زمان حرکت</th>
+                 <th class="table-h">تاریخ</th>
+                 <th class="table-h">مقصد</th>
+                 <th class="table-h">مبدا</th>
+                 <th class="table-h">شماره پرواز</th>
+                 <th class="table-h">هواپیما</th>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">22:00</td>
+                 <td class="table-r">1401/10/05</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM1081</td>
+                 <td class="table-r"><a class="airplane-name" href="">A310</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">16:00</td>
+                 <td class="table-r">1401/10/10</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">IRM1341</td>
+                 <td class="table-r"><a class="airplane-name" href="">B450</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">12:00</td>
+                 <td class="table-r">1401/10/16</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM3476</td>
+                 <td class="table-r"><a class="airplane-name" href="">MD10</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">08:00</td>
+                 <td class="table-r">1401/10/20</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">IRM4509</td>
+                 <td class="table-r"><a class="airplane-name" href="">F100</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">11:00</td>
+                 <td class="table-r">1401/10/25</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM9874</td>
+                 <td class="table-r"><a class="airplane-name" href="">B737</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">14:00</td>
+                 <td class="table-r">1401/10/28</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">IRM2341</td>
+                 <td class="table-r"><a class="airplane-name" href="">A531</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">17:00</td>
+                 <td class="table-r">1401/10/30</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">IRM4578</td>
+                 <td class="table-r"><a class="airplane-name" href="">MD83</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">21:30</td>
+                 <td class="table-r">1401/11/01</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">IRM2190</td>
+                 <td class="table-r"><a class="airplane-name" href="">F500</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">18:00</td>
+                 <td class="table-r">1401/11/02</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM1081</td>
+                 <td class="table-r"><a class="airplane-name" href="">A300</a></td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">نشست</td>
+                 <td class="table-r">07:00</td>
+                 <td class="table-r">1401/10/03</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">IRM7832</td>
+                 <td class="table-r"><a class="airplane-name" href="">B310</a></td>
+             </tr>
+         </table>
+         <!-- tickets list -->
+         <table class="tickets-table">
+             <tr class="tr">
+                 <th class="table-h">شماره صندلی</th>
+                 <th class="table-h">شماره رزرو</th>
+                 <th class="table-h">زمان حرکت</th>
+                 <th class="table-h">تاریخ</th>
+                 <th class="table-h">مقصد</th>
+                 <th class="table-h">مبدا</th>
+                 <th class="table-h">شماره پرواز</th>
+                 <th class="table-h">هواپیما</th>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">1A</td>
+                 <td class="table-r">2567</td>
+                 <td class="table-r">22:00</td>
+                 <td class="table-r">1401/10/05</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM1081</td>
+                 <td class="table-r">A310</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">2B</td>
+                 <td class="table-r">8762</td>
+                 <td class="table-r">16:00</td>
+                 <td class="table-r">1401/10/05</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">IRM5439</td>
+                 <td class="table-r">B737</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">3D</td>
+                 <td class="table-r">1893</td>
+                 <td class="table-r">22:00</td>
+                 <td class="table-r">1401/10/05</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">IRM7832</td>
+                 <td class="table-r">MD83</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">5C</td>
+                 <td class="table-r">3298</td>
+                 <td class="table-r">11:00</td>
+                 <td class="table-r">1401/10/10</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM9874</td>
+                 <td class="table-r">F100</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">7E</td>
+                 <td class="table-r">1658</td>
+                 <td class="table-r">17:00</td>
+                 <td class="table-r">1401/10/13</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">IRM2190</td>
+                 <td class="table-r">A310</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">10F</td>
+                 <td class="table-r">2465</td>
+                 <td class="table-r">13:00</td>
+                 <td class="table-r">1401/10/20</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM5321</td>
+                 <td class="table-r">MD10</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">12B</td>
+                 <td class="table-r">9031</td>
+                 <td class="table-r">18:00</td>
+                 <td class="table-r">1401/10/25</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">IRM1473</td>
+                 <td class="table-r">B910</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">14A</td>
+                 <td class="table-r">6271</td>
+                 <td class="table-r">09:00</td>
+                 <td class="table-r">1401/10/27</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">IRM4516</td>
+                 <td class="table-r">F500</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">16C</td>
+                 <td class="table-r">1648</td>
+                 <td class="table-r">15:00</td>
+                 <td class="table-r">1401/11/01</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">مشهد</td>
+                 <td class="table-r">IRM3582</td>
+                 <td class="table-r">A800</td>
+             </tr>
+             <tr class="tr">
+                 <td class="table-r">17D</td>
+                 <td class="table-r">2011</td>
+                 <td class="table-r">22:00</td>
+                 <td class="table-r">1401/11/02</td>
+                 <td class="table-r">بیرجند</td>
+                 <td class="table-r">تهران</td>
+                 <td class="table-r">IRM4367</td>
+                 <td class="table-r">MD83</td>
+             </tr>
+         </table>
+     </div>
+   </div>
+  
+  <!-- <footer>
+   <div class="footer_box">
+       <div class="newsletter">
+           <h4 class="">عضویت در خبرنامه</h4>
+           <p style="color: white;">با اشتراک در خبرنامه از آخرین و بهترین پیشنهادها مطلع شوید</p>
+           <div class="input-group">
+               <input type="text" class="form-control" placeholder="ایمیل خود را وارد کنید">
+               <button type="submit" class="">Subscribe</button>
+           </div>
+       </div>
+ 
+       <div class="e_namad">
+           <img src="img/E_namad.jpg" alt="">
+       </div>
+ 
+       <div class="link_item">
+           <ul class="icons-list">
+               <li>
+                   <a href="#">درباره ما</a>
+                   <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+               </li>
+               <li>
+                   <a href="#">پرسش های متداول</a>
+                   <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+               </li>
+               <li>
+                   <a href="#">مدیریت رزروها</a>
+                   <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+               </li>
+               <li>
+                   <a href="#">هواپیمایی ها</a>
+                   <span class="orang-color fw-bold" style="font-size:18px;"> < </span>
+               </li>
+               <li>
+                   <a href="#">فرودگاه ها</a>
+                   <span class="orang-color fw-bold" style="font-size:18px;"> < </span>   
+               </li>
+           </ul>
+       </div>
+   </div>
+ 
+   <div class="gotoup position-relative">
+       <div class="gotoup_sign">
+           <a href="#">
+               <i class="fa-solid fa-arrow-up gotoup_icon"></i>
+           </a>
+       </div>
+   </div>
+ </footer> -->
+ </body>
+ </html>
