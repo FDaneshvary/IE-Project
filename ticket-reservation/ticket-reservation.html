@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- attached CSS File -->
+    <link rel="stylesheet" href="ticket-reservation.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 13px;
+      /* background-color:#0b5fb3 ; */
+      background: linear-gradient(rgba(15,132,250,1),rgba(255,255,255,0.5));
+  }
+    @font-face {
+      font-family: 'BYekanWeb';
+      src: url('http://example.com/fonts/BYekanWeb.eot');
+      src: local('BYekanWeb'), 
+           url('http://example.com/fonts/BYekanWeb.eot?#iefix') format('embedded-opentype'),
+           url('http://example.com/fonts/BYekanWeb.woff2') format('woff2'),
+           url('http://example.com/fonts/BYekanWeb.woff') format('woff'),
+           url('http://example.com/fonts/BYekanWeb.ttf') format('truetype'),
+           url('http://example.com/fonts/BYekanWeb.svg#BYekanWeb') format('svg');
+      font-style: normal;
+      font-weight: normal;
+      font-display: swap;
+  }
+</style>
+<body>
+    <!-- header -->
+    <!-- <div class="header-part">
+        <nav class="nav-part">
+            <a class="h-nav" href="">صفحه اصلی</a>
+            <a class="h-nav" href="">رزرو بلیط</a>
+        </nav>
+     </div> -->
+
+    
+    
+    <div class="ch_background">
+        <!-- personalinformation-form -->
+        <div class="information-form">
+            <form action="" method="get">   
+                <p class="p-info-form">اطلاعات شخصی</p>
+                <label class="label-input" for="fname">نام</label>
+                <span style="color: red;">*</span>
+                <input class="info-input" id="fname" type="text" name="first name">
+         
+                <label class="label-input" for="lname">نام خانوادگی</label>
+                <span style="color: red;">*</span>
+                <input class="info-input" id="lname" type="text" name="last name" value="" size="18"/>
+         
+                <label class="label-input" for="idnum">کد ملی</label>
+                <span style="color: red;">*</span>
+                <input class="info-input" id="idnum" type="text" name="id number" value="" size="18"/>
+  
+                <label class="label-input" for="chairnum">شماره صندلی</label>
+                <input class="info-input" id="chairnum" type="text" name="id number" 
+                placeholder="صندلی خود را انتخاب کنید" value="" size="18"/>
+                <br>
+                <input id="send_btn" class="submit-button" type="submit" value="submit"/>
+                <br><br>
+            </form>
+        </div>
+        <!-- guide sign to show reseved and not reserved seats. -->
+        <div class="guide">
+            <div class="resev_ch">
+                <span>رزرو شده</span>
+                <div class="ch_size res"></div>
+            </div>
+            <div class="noreserv_ch">
+                <span>رزرو نشده</span>
+                <div class="ch_size"></div>
+            </div>
+        </div>
+        <!-- airplane chairs -->
+        <!-- ch_x ==> x means row number -->
+        <div class="chairs">
+            <!-- 1 -->
+            <div class="row">
+                <div class="row_num">01</div>
+                <div class="up_ch chair">
+                    <div id="1A" value="ch_1_A" value="ch_1_A" class="ch_size res">A</div>
+                    <div id="1B" value="ch_1_B" class="ch_size">B</div>
+                    <div id="1C" value="ch_1_C" class="ch_size res">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="1D" value="ch_1_D" class="ch_size">D</div>
+                    <div id="1E" value="ch_1_E" class="ch_size">E</div>
+                    <div id="1F" value="ch_1_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="row">
+                <div class="row_num">02</div>
+                <div class="up_ch chair">
+                    <div id="2A" value="ch_2_A" class="ch_size">A</div>
+                    <div id="2B" value="ch_2_B" class="ch_size">B</div>
+                    <div id="2C" value="ch_2_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="2D" value="ch_2_D" class="ch_size">D</div>
+                    <div id="2E" value="ch_2_E" class="ch_size">E</div>
+                    <div id="2F" value="ch_2_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="row">
+                <div class="row_num">03</div>
+                <div class="up_ch chair">
+                    <div id="3A" value="ch_3_A" class="ch_size">A</div>
+                    <div id="3B" value="ch_3_B" class="ch_size">B</div>
+                    <div id="3C" value="ch_3_C" class="ch_size res">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="3D" value="ch_3_D" class="ch_size">D</div>
+                    <div id="3E" value="ch_3_E" class="ch_size">E</div>
+                    <div id="3F" value="ch_3_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="row">
+                <div class="row_num">04</div>
+                <div class="up_ch chair">
+                    <div id="4A" value="ch_4_A" class="ch_size res">A</div>
+                    <div id="4B" value="ch_4_B" class="ch_size">B</div>
+                    <div id="4C" value="ch_4_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="4D" value="ch_4_D" class="ch_size">D</div>
+                    <div id="4E" value="ch_4_E" class="ch_size">E</div>
+                    <div id="4F" value="ch_4_F" class="ch_size res">F</div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="row">
+                <div class="row_num">05</div>
+                <div class="up_ch chair">
+                    <div id="5A" value="ch_5_A" class="ch_size">A</div>
+                    <div id="5B" value="ch_5_B" class="ch_size">B</div>
+                    <div id="5C" value="ch_5_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="5D" value="ch_5_D" class="ch_size">D</div>
+                    <div id="5E" value="ch_5_E" class="ch_size">E</div>
+                    <div id="5F" value="ch_5_F" class="ch_size res">F</div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="row">
+                <div class="row_num">06</div>
+                <div class="up_ch chair">
+                    <div id="6A" value="ch_6_A" class="ch_size">A</div>
+                    <div id="6B" value="ch_6_B" class="ch_size">B</div>
+                    <div id="6C" value="ch_6_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="6D" value="ch_6_D" class="ch_size">D</div>
+                    <div id="6E" value="ch_6_E" class="ch_size">E</div>
+                    <div id="6F" value="ch_6_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="row">
+                <div class="row_num">07</div>
+                <div class="up_ch chair">
+                    <div id="7A" value="ch_7_A" class="ch_size">A</div>
+                    <div id="7B" value="ch_7_B" class="ch_size">B</div>
+                    <div id="7C" value="ch_7_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="7D" value="ch_7_D" class="ch_size">D</div>
+                    <div id="7E" value="ch_7_E" class="ch_size">E</div>
+                    <div id="7F" value="ch_7_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="row">
+                <div class="row_num">08</div>
+                <div class="up_ch chair">
+                    <div id="8A" value="ch_8_A" class="ch_size">A</div>
+                    <div id="8B" value="ch_8_B" class="ch_size">B</div>
+                    <div id="8C" value="ch_8_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="8D" value="ch_8_D" class="ch_size">D</div>
+                    <div id="8E" value="ch_8_E" class="ch_size">E</div>
+                    <div id="8F" value="ch_8_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="row">
+                <div class="row_num">09</div>
+                <div class="up_ch chair">
+                    <div id="9A" value="ch_9_A" class="ch_size">A</div>
+                    <div id="9B" value="ch_9_B" class="ch_size">B</div>
+                    <div id="9C" value="ch_9_C" class="ch_size res">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="9D" value="ch_9_D" class="ch_size res">D</div>
+                    <div id="9E" value="ch_9_E" class="ch_size res">E</div>
+                    <div id="9F" value="ch_9_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="row">
+                <div class="row_num">10</div>
+                <div class="up_ch chair">
+                    <div id="10A" value="ch_10_A" class="ch_size res">A</div>
+                    <div id="10B" value="ch_10_B" class="ch_size">B</div>
+                    <div id="10C" value="ch_10_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="10D" value="ch_10_D" class="ch_size">D</div>
+                    <div id="10E" value="ch_10_E" class="ch_size">E</div>
+                    <div id="10F" value="ch_10_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="row">
+                <div class="row_num">11</div>
+                <div class="up_ch chair">
+                    <div id="11A" value="ch_11_A" class="ch_size">A</div>
+                    <div id="11B" value="ch_11_B" class="ch_size">B</div>
+                    <div id="11C" value="ch_11_C" class="ch_size">D</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="11D" value="ch_11_D" class="ch_size">D</div>
+                    <div id="11E" value="ch_11_E" class="ch_size">E</div>
+                    <div id="11F" value="ch_11_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="row">
+                <div class="row_num">12</div>
+                <div class="up_ch chair">
+                    <div id="12A" value="ch_12_A" class="ch_size">A</div>
+                    <div id="12B" value="ch_12_B" class="ch_size">B</div>
+                    <div id="12C" value="ch_12_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="12D" value="ch_12_D" class="ch_size">D</div>
+                    <div id="12E" value="ch_12_E" class="ch_size">E</div>
+                    <div id="12F" value="ch_12_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="row">
+                <div class="row_num">13</div>
+                <div class="up_ch chair">
+                    <div id="13A" value="ch_13_A" class="ch_size">A</div>
+                    <div id="13B" value="ch_13_B" class="ch_size">B</div>
+                    <div id="13C" value="ch_13_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="13D" value="ch_13_D" class="ch_size">D</div>
+                    <div id="13E" value="ch_13_E" class="ch_size">E</div>
+                    <div id="13F" value="ch_13_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="row">
+                <div class="row_num">14</div>
+                <div class="up_ch chair">
+                    <div id="14A" value="ch_14_A" class="ch_size">A</div>
+                    <div id="14B" value="ch_14_B" class="ch_size">B</div>
+                    <div id="14C" value="ch_14_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="14D" value="ch_14_D" class="ch_size">D</div>
+                    <div id="14E" value="ch_14_E" class="ch_size">E</div>
+                    <div id="14F" value="ch_14_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="row">
+                <div class="row_num">15</div>
+                <div class="up_ch chair">
+                    <div id="15A" value="ch_15_A" class="ch_size res">A</div>
+                    <div id="15B" value="ch_15_B" class="ch_size res">B</div>
+                    <div id="15C" value="ch_15_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="15D" value="ch_15_D" class="ch_size">D</div>
+                    <div id="15E" value="ch_15_E" class="ch_size">E</div>
+                    <div id="15F" value="ch_15_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 16 -->
+            <div class="row">
+                <div class="row_num">16</div>
+                <div class="up_ch chair">
+                    <div id="16A" value="ch_16_A" class="ch_size">A</div>
+                    <div id="16B" value="ch_16_B" class="ch_size">B</div>
+                    <div id="16C" value="ch_16_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="16D" value="ch_16_D" class="ch_size">D</div>
+                    <div id="16E" value="ch_16_E" class="ch_size">E</div>
+                    <div id="16F" value="ch_16_F" class="ch_size">F</div>
+                </div>
+            </div>
+            <!-- 17 -->
+            <div class="row">
+                <div class="row_num">17</div>
+                <div class="up_ch chair">
+                    <div id="17A" value="ch_17_A" class="ch_size">A</div>
+                    <div id="17B" value="ch_17_B" class="ch_size">B</div>
+                    <div id="17C" value="ch_17_C" class="ch_size">C</div>
+                </div>
+                <div class="down_ch chair">
+                    <div id="17D" value="ch_17_D" class="ch_size">D</div>
+                    <div id="17E" value="ch_17_E" class="ch_size">E</div>
+                    <div id="17F" value="ch_17_F" class="ch_size">F</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- attached JS File -->
+    <script src="ticket-reservation.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* header */
+/* .header-part{
+    width: auto;
+    height: 50px;
+    padding: 20px;
+    background-color: #0b5fb3;;
+    display: flex;
+    align-items: center#0b5fb3;
+    justify-content: right;
+  }
+  .nav-part{
+    display: flex;
+    align-items: center;
+    direction: rtl;
+  }
+  .h-nav{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    color: white;
+    font-family: BYekanWeb, Tahoma, Geneva, sans-serif;
+  } */
+
+/* personal information form */
+.information-form{
+    background-color: white;
+    height: 130px;
+    width: 1000px;
+    position: relative;
+    /* left: 170px; */
+    top:80px;
+    display: flex;
+    direction: rtl;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 500px;
+}
+
+.p-info-form{
+    padding-bottom: 10px;
+    color: #0b5fb3;
+    font-weight:bold;
+    
+    /* position: relative;
+    right: 5px; */
+}
+
+/* .info-input{
+    position: relative;
+    top: 35px; 
+    right: 5px;
+    margin-left: 15px;
+} */
+
+/* .label-input{
+    position: relative;
+    top: 35px;
+    right: 5px; 
+} */
+
+.submit-button{
+    margin: 0 5px;
+    background-color: #0b5fb3;
+    color: white;
+    width: 100px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #dba100;
+    border-radius: 10px;
+    font-weight: 700px;
+    position: relative;
+    right:765px;
+}
+
+/* airplane chairs */
+.ch_background{
+    background-image: url("../img/plane.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chairs{
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    top: 320px;
+    left: 170px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 2px;
+}
+
+.row_num{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.up_ch{
+    margin: 0 0 10px 20px;
+}
+
+.down_ch{
+    margin: 0 0 0 20px;
+}
+
+.chair{
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+
+.ch_size{
+    width: 12px;
+    height: 12px;
+    background: #0b5fb3;
+    margin: 2px;
+}
+
+.guide{
+    position: absolute;
+    left: 900px;
+    top: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.resev_ch{
+    display: flex;
+}
+
+.noreserv_ch{
+    display: flex;
+}
+
+.res{
+    width: 12px;
+    height: 12px;
+    background: #dba100;
+    margin: 2px;
+}
