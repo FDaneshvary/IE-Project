@@ -19,7 +19,7 @@ public class DBservice {
     public  void insert(String query)
     {
         try (Connection conn = DriverManager.getConnection
-                ("jdbc:mysql://localhost:3306/flightdb", "root", "");
+                ("jdbc:mysql://localhost:3306/flightdb", "class1`", "123");
              Statement stmt = conn.createStatement();
         )
         {
