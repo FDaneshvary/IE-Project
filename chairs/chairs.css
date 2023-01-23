@@ -10,22 +10,27 @@ body{
 .passengers-table{
     margin-top: 70px;
     border-collapse: collapse;
-    background-color: #dba100;
-    border-radius: 10px;
+    background-color: white;
+    /* border-radius: 10px; */
+    width: 1000px;
 }
 .table-row{
     border-bottom: 1px solid #dddddd;
     border-radius: 10px;
 }
-.table-row:hover{
-    border-color: #fb0;
-    background-color: rgb(249, 214, 118);
-    border-width: 2px;
-    border-radius: 10px;
-}
 .table-row:nth-child(even) {
     background-color: #ffebb2;
-  }
+}
+.table-row:hover{
+    /* border-color: #fb0;
+    background-color: rgb(249, 214, 118);
+    border-width: 2px;
+    border-radius: 10px; */
+    background-color: #fb0;
+    color: white;
+    /* border-radius: 10px; */
+}
+
 .table-r{
     text-align: center;
     padding: 8px;
